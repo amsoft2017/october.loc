@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Category
+
+# Model Form Field configuration
+form: $/amsoft/tutorial/models/category/fields.yaml
+
+# Model Class name
+modelClass: Amsoft\Tutorial\Models\Category
+
+# Default redirect location
+defaultRedirect: amsoft/tutorial/categories
+
+# Create page
+create:
+    title: Создать категорию
+    redirect: amsoft/tutorial/categories/update/:id
+    redirectClose: amsoft/tutorial/categories
+
+# Update page
+update:
+    title: Редактировать категорию
+    redirect: amsoft/tutorial/categories
+    redirectClose: amsoft/tutorial/categories
+
+# Preview page
+preview:
+    title: Просмотр категории
